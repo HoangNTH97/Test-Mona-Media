@@ -1,0 +1,26 @@
+.ticket-filter {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 14px;
+
+    & h4 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        opacity: 0.5;
+    }
+}
+
+.filter-btn {
+    width: 120px;
+    height: 34px;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+}

@@ -1,0 +1,15 @@
+.topics {
+    margin-top: 50px;
+    padding: 0 135px;
+}
+
+.topics-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+
+    &-item {
+        margin-bottom: 20px;
+    }
+}

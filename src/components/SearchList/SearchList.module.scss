@@ -1,0 +1,60 @@
+.search-list {
+    width: 100%;
+    padding: 20px 171px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white);
+}
+
+.derpatute {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+
+    .start-point,
+    .end-point {
+        & h4 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        & p {
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+    }
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    .person-inf {
+        font-size: 1.4rem;
+        font-weight: 600;
+
+        & span {
+            color: var(--primary);
+        }
+    }
+}
+
+.search-button {
+    width: 160px;
+
+    .btn {
+        border-radius: 12px;
+        padding: 10px 16px;
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--secondary);
+        color: var(--white);
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}

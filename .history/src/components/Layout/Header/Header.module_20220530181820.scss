@@ -1,0 +1,31 @@
+.header {
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+}
+
+.header-logo {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 800;
+    font-size: 1.8rem;
+    color: var(--primary);
+    & img {
+        margin-right: 10px;
+    }
+}
+
+.header-main {
+    flex: 4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

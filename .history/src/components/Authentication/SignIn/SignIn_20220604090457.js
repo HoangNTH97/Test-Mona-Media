@@ -1,0 +1,33 @@
+import React from 'react';
+import classNames from 'classnames/bind';
+
+import styles from './SignIn.module.scss';
+import Button from '../../Button/Button';
+import { GoogleIcon } from '../../icons/icons';
+
+const cx = classNames.bind(styles);
+
+SignIn.propTypes = {};
+
+function SignIn(props) {
+    return (
+        <div className={cx('sign-in')}>
+            <div className={cx('header-form')}>
+                <h2> Welcome Back 👏</h2>
+                <h5>Have we meet before?</h5>
+            </div>
+            <div className={cx('login-form')}>
+                <Button leftIcon={<GoogleIcon />}>Sign in with Google</Button>
+                <h5>Or continue with</h5>
+                <div className={cx('form')}>
+                    <label htmlFor="Email">Email *</label>
+                    <input type="Email" />
+                    <label htmlFor="password">Password *</label>
+                    <input type="password" name="" id="" />
+                </div>
+            </div>
+        </div>
+    );
+}
+
+export default SignIn;

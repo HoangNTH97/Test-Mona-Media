@@ -1,0 +1,136 @@
+.card-item {
+    padding: 30px;
+    position: relative;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    font-size: 1.4rem;
+    font-weight: 600;
+
+    & span {
+        color: var(--primary);
+    }
+
+    & img:hover {
+        opacity: 0.8;
+    }
+}
+
+.option {
+    display: flex;
+    gap: 20px;
+}
+
+.check,
+.uncheck,
+.person,
+.type {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.departure {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.departure-container {
+    display: flex;
+
+    .startplace,
+    .endplace {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 300px;
+        padding: 12px 20px;
+        border: 1px solid rgba($color: #000000, $alpha: 0.1);
+        border-radius: 20px;
+    }
+
+    & h4 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        opacity: 0.5;
+    }
+
+    & h2 {
+        font-size: 2.4rem;
+        font-weight: 600;
+        color: var(--primary);
+    }
+
+    & p {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+}
+
+.time {
+    display: flex;
+    gap: 60px;
+    width: 530px;
+    padding: 12px 20px;
+    border: 1px solid rgba($color: #000000, $alpha: 0.1);
+    border-radius: 20px;
+
+    .departure-time,
+    .return-time {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        & h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            opacity: 0.5;
+        }
+
+        & span {
+            font-size: 2.4rem;
+            font-weight: 600;
+            color: var(--primary);
+
+            & img {
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+.departure-swap,
+.return-swap {
+    display: flex;
+    gap: 20px;
+}
+
+.card-btn {
+    .btn {
+        position: absolute;
+        right: 10%;
+        bottom: -24%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-decoration: none;
+        width: 245px;
+        height: 60px;
+        padding: 20px;
+        border-radius: 12px;
+        font-size: 1.8rem;
+        font-weight: 600;
+        background-color: var(--primary);
+        color: var(--white);
+        z-index: 10;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}

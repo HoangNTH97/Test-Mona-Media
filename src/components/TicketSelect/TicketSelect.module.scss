@@ -1,0 +1,214 @@
+.select {
+    margin-top: 15px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.select-item {
+    padding: 15px;
+    background-color: var(--white);
+}
+
+.header {
+    position: relative;
+    padding: 15px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    background-color: var(--white);
+
+    &::after {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0px;
+        border: 1px solid rgba($color: #000000, $alpha: 0.1);
+    }
+}
+
+.turn {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    .turn-number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 100px;
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: var(--white);
+        background-color: #979797;
+    }
+
+    .infomation {
+        font-size: 1.4rem;
+        font-weight: 600;
+        & p {
+            opacity: 0.5;
+        }
+    }
+}
+
+.airline {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    .airline-icon {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        background-color: var(--white);
+        border: 1px solid rgba($color: #000000, $alpha: 0.2);
+    }
+
+    .airline-name {
+        & h4 {
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+        & a {
+            font-size: 1.2rem;
+            color: var(--primary);
+        }
+    }
+}
+
+.time-point {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+
+    .start-time {
+        & h4 {
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+        .start-point {
+            margin-top: 4px;
+            width: 33px;
+            height: 21px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100px;
+            font-size: 10px;
+            font-weight: 600;
+            background-color: #4d46fa1a;
+        }
+    }
+
+    .flight-time {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & p {
+            font-size: 1.4rem;
+            font-weight: 400;
+        }
+
+        .line {
+            position: absolute;
+            left: -68%;
+            top: 45%;
+        }
+    }
+
+    .end-time {
+        & h4 {
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+        .end-point {
+            margin-top: 4px;
+            width: 33px;
+            height: 21px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100px;
+            font-size: 10px;
+            font-weight: 600;
+            background-color: #4d46fa1a;
+        }
+    }
+}
+
+.select-btn {
+    margin-top: 20px;
+
+    .btn-item {
+        border-radius: 12px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--primary);
+        background-color: #4d46fa1a;
+    }
+}
+
+.return {
+    position: relative;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    .return-number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 100px;
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: var(--white);
+        background-color: var(--primary);
+    }
+
+    .infomation {
+        font-size: 1.4rem;
+        font-weight: 600;
+        & p {
+            opacity: 0.5;
+        }
+    }
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 0;
+        border: 1px solid rgba($color: #000000, $alpha: 0.1);
+        top: -10px;
+        left: 0;
+    }
+}
+.subtotal {
+    padding: 15px;
+    background-color: #f8f8f8;
+
+    & p {
+        font-weight: 400;
+        font-size: 1.4rem;
+    }
+
+    & h4 {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: var(--secondary);
+    }
+}

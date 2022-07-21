@@ -1,0 +1,30 @@
+.card-item {
+    max-width: 370px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+.card-icon {
+    padding: 10px;
+    background-color: var(--white);
+    border-radius: 100px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-header {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--text-color-1);
+}
+
+.card-desc {
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 13px;
+}

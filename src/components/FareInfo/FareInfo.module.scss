@@ -1,0 +1,113 @@
+.fare-info-content-item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 120px;
+}
+
+.fare-info-content-conditions {
+  flex: 40%;
+
+  .condition {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  .info-airline {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    .info-airline-icon {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      background-color: var(--white);
+      border: 1px solid rgba($color: #000000, $alpha: 0.2);
+    }
+
+    .info-airline-name {
+      & h4 {
+        font-size: 1.4rem;
+        font-weight: 600;
+      }
+      & p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .info-location {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+
+    & p {
+      font-size: 1.4rem;
+      font-weight: 400;
+    }
+  }
+
+  .g-class {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--primary);
+  }
+
+  .refund {
+    margin-top: 15px;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+}
+
+.fare-info-content-price {
+  flex: 60%;
+
+  .price {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  .adult-basic,
+  .tax,
+  .regular,
+  .save,
+  .pay {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & p {
+      font-size: 1.4rem;
+      font-weight: 400;
+    }
+
+    & h4 {
+      font-size: 1.4rem;
+      font-weight: 400;
+    }
+  }
+
+  .adult-basic {
+    margin-top: 15px;
+  }
+
+  .save {
+    & p {
+      color: var(--secondary);
+    }
+  }
+
+  .pay {
+    margin-top: 10px;
+
+    & h4 {
+      color: var(--secondary);
+    }
+  }
+}

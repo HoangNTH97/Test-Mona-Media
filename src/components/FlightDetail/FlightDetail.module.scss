@@ -1,0 +1,98 @@
+//Detail card
+
+.flight-detail-content-item {
+  display: flex;
+  justify-content: space-between;
+  .detail-content-left {
+    position: relative;
+    display: flex;
+    gap: 64px;
+
+    .detail-time-point {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      & h4 {
+        font-size: 1.4rem;
+        font-weight: 600;
+      }
+
+      & p {
+        font-size: 1.2rem;
+        font-weight: 400;
+        opacity: 0.5;
+      }
+    }
+
+    .detail-line-point {
+      position: absolute;
+      top: 50%;
+      left: 25%;
+      transform: translateY(-50%);
+    }
+
+    .detail-location-point {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      & h4 {
+        font-size: 1.4rem;
+        font-weight: 600;
+      }
+
+      & p {
+        font-size: 1.2rem;
+        font-weight: 400;
+        opacity: 0.5;
+      }
+    }
+  }
+
+  .detail-content-right {
+    .detail-airline {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      .detail-airline-icon {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        background-color: var(--white);
+        border: 1px solid rgba($color: #000000, $alpha: 0.2);
+      }
+
+      .detail-airline-name {
+        & h4 {
+          font-size: 1.4rem;
+          font-weight: 600;
+        }
+        & p {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    .detail-airline-inf {
+      display: flex;
+      align-items: center;
+      gap: 70px;
+      margin-top: 10px;
+      padding: 15px;
+      border-radius: 12px;
+      background-color: #f4f2f9;
+      font-size: 1.4rem;
+      font-weight: 600;
+
+      & span {
+        color: var(--primary);
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.header {
+    padding: 20px 30px;
+    display: flex;
+}
+
+.header-logo {
+    flex: 1;
+}
+
+.header-main {
+    flex: 4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

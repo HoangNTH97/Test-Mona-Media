@@ -1,0 +1,12 @@
+.app {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    background-color: #e5e5e5;
+}
+.app-content {
+    width: 1512px;
+    position: relative;
+    background-color: var(--white);
+    overflow: hidden;
+}

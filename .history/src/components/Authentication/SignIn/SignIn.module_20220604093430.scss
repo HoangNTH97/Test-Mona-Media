@@ -1,0 +1,38 @@
+.sign-in {
+    width: 440px;
+    height: 548px;
+    padding: 40px;
+    background-color: var(--secondary-color);
+    margin: auto;
+}
+
+.login-form {
+    margin-top: 30px;
+
+    & h5 {
+        margin-top: 30px;
+        font-size: 1.3rem;
+        font-weight: 500;
+
+        &::before {
+            content: '';
+            height: 1px;
+        }
+    }
+}
+
+.header-form {
+    & h2 {
+        font-size: 2rem;
+        font-weight: 800;
+        line-height: calc(20 / 30);
+        color: #414357;
+    }
+
+    & h5 {
+        margin-top: 10px;
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #a0a1ab;
+    }
+}

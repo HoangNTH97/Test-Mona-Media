@@ -1,0 +1,133 @@
+.sign-in {
+    width: 440px;
+    height: 548px;
+    padding: 40px;
+    background-color: var(--white);
+    margin: auto;
+    border-radius: 10px;
+}
+
+.header-form {
+    & h2 {
+        font-size: 2rem;
+        font-weight: 800;
+        line-height: calc(20 / 30);
+        color: #414357;
+    }
+
+    & h5 {
+        margin-top: 10px;
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #a0a1ab;
+    }
+}
+
+.login-form {
+    margin-top: 30px;
+    width: 100%;
+
+    & h5 {
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        margin-top: 30px;
+        font-size: 1.3rem;
+        font-weight: 500;
+        position: relative;
+        color: --text-color-2;
+        &:after {
+            content: '';
+            border: 1px solid #cfd0d5;
+            position: absolute;
+            width: 114px;
+            top: 8px;
+            left: 0;
+        }
+        &:before {
+            content: '';
+            border: 1px solid #cfd0d5;
+            width: 114px;
+            position: absolute;
+            top: 8px;
+            right: 0;
+        }
+    }
+}
+
+.form {
+    & label {
+        display: block;
+    }
+
+    & input {
+        width: 100%;
+        height: 40px;
+        padding: 14px;
+        border: 1px solid #e7e7ea;
+        border-radius: 6px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        outline: none;
+    }
+
+    .error {
+        border: 1px solid #eb5757;
+        &::placeholder {
+            opacity: 1;
+            color: #eb5757;
+        }
+    }
+}
+
+.error {
+    border: 1px solid #eb5757;
+    &::placeholder {
+        color: #eb5757;
+    }
+}
+
+.form-remember {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    .form-checkBox {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        & input {
+            width: 14px;
+            height: 14px;
+        }
+
+        & h4 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #b2b3bd;
+        }
+    }
+
+    & a {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: var(--secondary-color);
+        text-decoration: none;
+    }
+}
+
+.form-forget {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #b2b3bd;
+
+    & a {
+        color: var(--primary);
+        text-decoration: none;
+    }
+}
